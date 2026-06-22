@@ -160,6 +160,22 @@ a { color: inherit; text-decoration: none; }
 .about h2 { font-size: 28px; margin-bottom: 24px; }
 .section-text { color: var(--muted); margin-bottom: 40px; max-width: 560px; }
 
+.about-blocks {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 32px;
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+.about-block {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+.about-block:last-child { border-bottom: none; }
+.about-block h3 { color: var(--ink); font-size: 17px; margin-bottom: 10px; }
+.about-block p { color: var(--muted); font-size: 14px; }
+
 .value-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -174,8 +190,12 @@ a { color: inherit; text-decoration: none; }
 .value-card h3 { font-size: 18px; margin-bottom: 10px; }
 .value-card p { color: var(--muted); font-size: 14px; }
 
+/* releases */
+.releases { padding: 90px 0; background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.releases h2 { font-size: 28px; margin-bottom: 24px; }
+
 /* collab */
-.collab { padding: 90px 0; }
+.collab { padding: 90px 0; background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .collab h2 { font-size: 28px; margin-bottom: 24px; }
 
 .product-card {
@@ -215,11 +235,10 @@ a { color: inherit; text-decoration: none; }
 .product-info p { color: var(--muted); font-size: 14px; }
 
 /* founder */
-.founder { padding: 90px 0; }
+.founder { padding: 90px 0; background: var(--bg); }
 .founder h2 { font-size: 28px; margin-bottom: 6px; }
 .founder h2 .role { font-size: 16px; color: var(--muted); font-weight: 400; }
 .founder-en { font-family: var(--mono); color: var(--muted); margin-bottom: 24px; }
-.founder-desc { color: var(--muted); max-width: 560px; }
 
 /* contact */
 .contact { padding: 90px 0 110px; background: var(--bg-alt); border-top: 1px solid var(--line); }
