@@ -49,6 +49,9 @@ a { color: inherit; text-decoration: none; }
 .logo .amp { color: var(--red); }
 .logo .slash { color: var(--red); }
 
+.logo-wrap { display: flex; align-items: baseline; gap: 8px; }
+.logo-kr { font-size: 12px; color: var(--muted); }
+
 /* header */
 .site-header {
   position: sticky;
