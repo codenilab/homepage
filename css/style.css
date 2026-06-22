@@ -72,6 +72,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--mono);
   font-size: 14px;
   color: var(--ink);
+  white-space: nowrap;
 }
 .site-header nav a:hover { color: var(--red); }
 
@@ -288,5 +289,15 @@ a { color: inherit; text-decoration: none; }
   .card-flip-wrap { width: 100%; max-width: 340px; }
   .card-flip { width: 100%; }
   .value-grid { grid-template-columns: 1fr; }
-  .site-header nav { gap: 16px; }
+
+  .header-inner { height: auto; min-height: 64px; padding: 10px 0; }
+  .logo-wrap { flex-direction: column; align-items: flex-end; gap: 1px; }
+  .logo-kr { font-size: 10px; }
+  .site-header nav { gap: 10px; }
+  .site-header nav a { font-size: 12px; }
+}
+
+@media (max-width: 400px) {
+  .site-header nav { gap: 7px; }
+  .site-header nav a { font-size: 11px; }
 }
