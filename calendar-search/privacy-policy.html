@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 캘린더 일정찾기</title>
+  <style>
+    body {
+      font-family: -apple-system, "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      line-height: 1.7;
+      color: #222;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      word-break: keep-all;
+      background-color: #fff;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #2b5cb8;
+      padding-bottom: 10px;
+      color: #1a3e80;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 36px;
+      color: #2b5cb8;
+    }
+
+    p,
+    li {
+      font-size: 0.98rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .note {
+      background: #f0f4fc;
+      border-left: 4px solid #2b5cb8;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+
+    code {
+      background: #f0f0f0;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #2b5cb8;
+    }
+
+    footer {
+      margin-top: 48px;
+      color: #888;
+      font-size: 0.85rem;
+      border-top: 1px solid #eee;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>개인정보처리방침</h1>
+  <p class="meta">앱 이름: 구글캘린더 일정찾기 (kr.codeni.calendarsearch)</p>
+
+  <p>
+    본 방침은 "구글캘린더 일정찾기"(이하 "본 앱")의 개인정보 및 데이터 처리 방식을 안내합니다.
+    본 앱은 사용자의 Google Calendar 일정 검색 및 관리를 위해 Google 계정 연동 권한을 사용하며,
+    동기화된 모든 일정 데이터는 <strong>사용자 기기 내부에만 저장</strong>되고 외부 서버로 전송되지 않습니다.
+    다만 무료 서비스 운영 및 광고 게재를 위해 제3자(Google AdMob)가 일부 기기 정보를 자동으로 수집할 수 있으며,
+    그 내용을 아래에 투명하게 공개합니다.
+  </p>
+
+  <h2>1. Google Calendar 데이터 처리 및 보관</h2>
+  <p>
+    본 앱은 Google Calendar API(읽기 전용 권한: <code>calendar.readonly</code>)를 통해 사용자가 허용한 캘린더의 일정 데이터를 조회합니다.
+  </p>
+  <ul>
+    <li><strong>처리 항목:</strong> 캘린더 목록 및 이름, 일정 제목, 설명, 위치, 시작/종료 일시, 참석자 명단, 일정 링크 등</li>
+    <li><strong>처리 목적:</strong> 앱 내 고속 로컬 검색 및 일정 상세 정보 조회 제공</li>
+    <li><strong>보관 방식:</strong> 수신된 데이터는 <strong>오직 사용자 기기 내부의 로컬 데이터베이스(SQLite)에만 저장</strong>되며, 개발자의 외부 서버나 클라우드로 절대
+      전송·수집되지 않습니다.</li>
+    <li><strong>인증 토큰:</strong> Google 로그인 인증 토큰은 안전하게 관리되며 외부로 유출되거나 별도 저장되지 않습니다.</li>
+  </ul>
+  <div class="note">
+    본 앱은 Google API 서비스 사용자 데이터 정책(Google API Services User Data Policy) 및 제한적 사용 요건(Limited Use requirements)을 철저히
+    준수합니다.
+  </div>
+
+  <h2>2. 광고를 통해 자동으로 수집되는 정보 (Google AdMob)</h2>
+  <p>
+    본 앱은 무료 제공을 위해 Google AdMob 광고를 게재합니다. 광고 게재 및 성과 측정을 위해
+    Google Mobile Ads SDK가 다음과 같은 정보를 자동으로 수집·처리할 수 있습니다.
+  </p>
+  <ul>
+    <li>광고 식별자(Advertising ID)</li>
+    <li>IP 주소(기기의 대략적인 위치 추정에 사용될 수 있음)</li>
+    <li>기기 정보 및 기기 모델명, OS 버전</li>
+    <li>앱 비정상 종료 로그 및 성능 데이터</li>
+    <li>광고와의 상호작용 정보</li>
+  </ul>
+  <p>
+    이 정보는 Google의 개인정보처리방침에 따라 처리됩니다. 자세한 내용은
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a> 및
+    <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google의 파트너 사이트 정보
+      사용 방식</a>을 참고하세요.
+    사용자는 기기 설정의 [Google] > [광고]에서 <strong>광고 ID를 재설정하거나 맞춤 광고를 거부</strong>할 수 있습니다.
+  </p>
+
+  <h2>3. 제3자 제공</h2>
+  <p>
+    본 앱은 사용자의 Google Calendar 일정 데이터 및 개인정보를 어떠한 경우에도 제3자에게 판매하거나 제공하지 않습니다.
+    광고 게재와 관련하여 위 2항에 명시된 범위 내에서 Google이 기술적 데이터를 처리할 수 있으며,
+    법령에 따라 요구되는 경우를 제외하고 그 외의 제3자 제공은 이루어지지 않습니다.
+  </p>
+
+  <h2>4. 데이터의 보관 및 파기</h2>
+  <p>
+    사용자의 일정 데이터는 기기 내부 데이터베이스에만 보관되며, 아래의 경우 즉시 완전 파기됩니다.
+  </p>
+  <ul>
+    <li>앱 내 상단의 <strong>[연결 해제]</strong> 버튼을 통해 계정 연동을 해제할 때</li>
+    <li>앱 내 <strong>[설정] > [로컬 데이터 초기화]</strong> 기능을 실행할 때</li>
+    <li>사용자가 기기에서 앱을 삭제(제거)할 때</li>
+  </ul>
+
+  <h2>5. 이용자의 권리</h2>
+  <p>
+    사용자는 언제든지 계정 연결을 해제하거나 로컬 데이터를 삭제할 수 있으며,
+    Google 계정 관리 페이지(보안 설정)에서 본 앱의 Google Calendar 접근 권한을 직접 철회할 수 있습니다.
+  </p>
+
+  <h2>6. 아동의 개인정보 보호</h2>
+  <p>
+    본 앱은 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.
+  </p>
+
+  <h2>7. 개인정보처리방침의 변경</h2>
+  <p>
+    본 개인정보처리방침은 법령이나 서비스 기능 변경에 따라 수정될 수 있으며, 변경 시 앱 내 공지 및 업데이트를 통해 고지합니다.
+  </p>
+
+  <h2>8. 개인정보 보호책임자 및 문의처</h2>
+  <p>
+    본 앱의 개인정보 처리에 관한 문의사항이나 피드백은 아래 연락처로 문의해 주시기 바랍니다.
+  </p>
+  <ul>
+    <li><strong>개발자 / 개발사:</strong> 코드앤아이 (CODE&amp;I)</li>
+    <li><strong>이메일 문의:</strong> <a href="mailto:codeni.lab@gmail.com">codeni.lab@gmail.com</a></li>
+  </ul>
+
+  <footer>
+    시행일: 2026년 08월 21일<br>
+    개발자: 코드앤아이 (CODE&amp;I)
+  </footer>
+
+</body>
+
+</html>
